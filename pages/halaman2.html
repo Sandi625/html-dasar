@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <title>halaman 2</title>
-    
-
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
     
 </head>
 <body>
-    <h1>Ini Adalah Halaman 2</h1>
-    <h3>
-        <p>Klik <a href="halaman3.html" target="_blank">Disini Untuk Kehalaman 3</a></p>
-        <img src="../assets/foto 5.JPG" title="Gambar Pendakian Gunung Pyramid" width="30%" height="30%">
-
-        
-    
+    <h1>Page registrasi</h1>
+    <form action="" method="get">
+        <!-- nama -->
+        <label for="nama">Nama Lengkap:</label> <br>
+        <input type="text" id="nama" name="nama" required> <br> <br>
+        <!-- email -->
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email" required> <br> <br>
+        <!-- No HP -->
+        <label for="nohp">Nomer HP:</label> <br>
+        <input type="text" id="nohp" name="nohp" required> <br> <br>
+        <!-- Jenis Kelamin -->
+        <label for="jenis_kelamin">Pilih Jenis Kelamin</label> <br> 
+        <p><input type='radio' name='jenis_kelamin' value='pria' required />Laki-Laki</p>
+        <p><input type='radio' name='jenis_kelamin' value='perempuan' required />Perempuan</p> <br> 
+        <!-- Prodi -->
+        <label for="prodi">Prodi</label> <br> <br>
+        <select name="prodi" id="prodi" required>
+            <option value="">Pilih Prodi</option>
+            <option value="Teknik Informatika">Teknik Informatika</option><br>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+        </select> <br> <br>
+        <!-- Hobi -->
+        <label for="hobi">Hobi</label>
+        <p><input type="checkbox" name="hobi_membaca" value="membaca">Membaca</p>
+        <p><input type="checkbox" name="hobi_menulis" value="menulis">Menulis</p>
+        <p><input type="checkbox" name="hobi_menyanyi" value="menyanyi">Menyanyi</p>
+        <p><input type="checkbox" name="hobi_olaraga" value="olahraga">Olahraga</p> <br> 
+        <!-- alamat -->
+        <label for="alamat">Alamat</label> <br> 
+        <textarea name="alamat" rows="10" cols="30" required></textarea>
+        <br> <br>
+        <!-- Foto diri -->
+        <label for="foto-diri">Foto Diri </label> <br>
+        <input type='file' name='foto' accept='image/*' required/>
+        <br>
+        <br>
+        <button type="submit">Daftar</button>
+        <br>
+        <br>
+        <br>
+    </form>
 </body>
 </html>
