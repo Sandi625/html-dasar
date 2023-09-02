@@ -4,6 +4,13 @@ console.log (document.title)
 
 console.log(document.title)
 
+// JavaScript to control video playback
+window.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('bg-video');
+    video.play(); // Start playing the video automatically
+});
+
+
 
 //materi append
 // document.title = 'fikri gobles'
