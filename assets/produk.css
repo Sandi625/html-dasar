@@ -6,7 +6,7 @@
     --font-utama : Arial, sans-serif;
 }
 body {
-    background-image: url('image/aziz-ayad-NJDyFoXDAus-unsplash.jpg');
+    background :var(--warna-utama);
     font-family: var(--font-utama);
     margin: 0;
     padding: 0;

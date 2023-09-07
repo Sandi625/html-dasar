@@ -35,7 +35,7 @@ let products = [
     {
         id: 4,
         name: ' Lige Tachymeter',
-        image: 'Lige Brown.jpg',
+        image: 'lige.jpeg',
         price: 2421900
     },
     {
