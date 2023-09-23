@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/productresponsive.css">
+</head>
+
+<body class="">
+
+  <div class="container">
+    <header>
+      <h1>List Produk Kami</h1>
+      <div class="shopping">
+        <img src="../assets/image/shopping.svg">
+        <span class="quantity">0</span>
+      </div>
+  </div>
+  </header>
+  </div>
+  <div class="buka" onclick="toggleSidebar()">
+    <img src="../assets/image/delete.svg" alt="" class="hapus-icon">
+    <span class="quantity">0</span>
+  </div>
+  <div class="sidebar" id="sidebar">
+    <div class="closecoy" onclick="toggleSidebar()">Tutup</div>
+    <!-- <button class="close-button" onclick="toggleSidebar()">Tutup daftar pesanan</button> -->
+    <h2 class="H2">Daftar Pesanan</h2>
+    <h3 class="H3">Pesanan tidak bisa di cancel jika sudah berada dalam kurun waktu 24 jam!</h3>
+    <div id="productList">
+    </div>
+    <button onclick="deleteSelectedProducts()">Delete Selected</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="list">
+
+  </div>
+  </div>
+  <div class="card">
+    <h1>Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+      <button id="checkoutButton">Checkout</button>
+      <div class="total">0</div>
+      <div class="closeShopping">Tutup</div>
+
+    </div>
+  </div>
+
+  <script src="../assets/javascript/productresponsive.js"></script>
+</body>
+
+</html>
