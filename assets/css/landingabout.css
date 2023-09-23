@@ -133,7 +133,7 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* CSS untuk ikon sosial media */
+
 .social-icons {
   margin-top: 20px;
 }
@@ -164,6 +164,9 @@ button[type="submit"]:hover {
 .carousel-container {
   max-width: 980px;
   width: 95%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 
@@ -171,7 +174,6 @@ button[type="submit"]:hover {
 .carousel {
   position: relative;
   width: 100%;
-  /*Width of image is 980px. Height is 570px.*/
   padding-top: calc(570 / 980 * 100%);
   overflow: hidden;
 }
@@ -366,3 +368,44 @@ footer {
 
 
 
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    flex-direction: column; 
+  }
+
+  .tentang {
+    transition: transform 0.3s ease;
+    margin-top: 20px; 
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .tentang {
+    position: static;
+    border-radius: 0;
+    bottom: auto;
+    left: auto;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tentang {
+    transform: translateY(100%); 
+  }
+}
