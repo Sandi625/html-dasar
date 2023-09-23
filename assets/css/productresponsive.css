@@ -76,21 +76,27 @@ header .shopping span{
     width: 100%;
     padding: 10px;
 }
-.card{
+.card {
     position: fixed;
-    top:0;
+    top: 0;
     left: 100%;
     width: 500px;
     background-color: var(--warna-card1);
     height: 100vh;
-    transition: 0.5s;
+    transition: left 0.5s, transform 0.5s; /* Menambahkan transisi untuk left dan transform */
 }
-.active .card{
+
+.active .card {
     left: calc(100% - 500px);
+    transform: translateX(0); /* Reset transform saat card aktif */
 }
-.active .container{
-   transform: translateX(-200px);
+
+.active .container {
+    transform: translateX(-200px);
 }
+
+/* Properti transisi untuk elemen lainnya tetap ada di sini */
+
 .card h1{
     color: var(--warna-card2);
     font-weight: 100;
@@ -372,4 +378,12 @@ button:hover {
   }
   
 
-  
+  @media screen and (max-width: 768px) {
+    .card {
+        width: 90%; 
+    }
+
+    .active .card {
+        left: calc(100% - 90%); 
+    }
+}
