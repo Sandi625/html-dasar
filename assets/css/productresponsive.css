@@ -29,7 +29,7 @@ header .shopping{
 }
 header .shopping img{
     width: 40px;
-   
+    /* transition: transform 0.2s; */
 }
 
 
@@ -148,7 +148,7 @@ header .shopping span{
     bottom: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* Menambahkan 3 kolom untuk memisahkan tombol Close, Checkout, dan Total */
 }
 
 .card .checkOut div {
@@ -256,7 +256,7 @@ header .shopping span{
    
 }
 
-
+/* Gaya untuk konten sidebar */
 .content {
     padding: 20px;
     font-family: var(--font-utama);
@@ -312,48 +312,64 @@ button:hover {
 
 
 
-@media screen and (max-width: 768px) {
-    :root {
-        --font-utama: sans-serif;
-    }
 
-  
-    .H2 {
-        font-size: 20px;
-    }
 
-    .H3 {
-        font-size: 16px;
-    }
 
-   
-}
 
 
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%; 
+      width: 100%;
     }
-
-    .list {
-        grid-template-columns: repeat(2, 1fr); 
+    header .shopping img {
+      width: 30px;
     }
-
-    .item {
-       
+    .list .item img {
+      height: auto;
     }
-
     .card {
-        width: 100%; 
+      width: 90%;
     }
-    
+    .active .card {
+      left: calc(100% - 90%);
+    }
+    .active .container {
+      transform: translateX(-50%);
+    }
+    .buka {
+      left: 80%;
+    }
+    .sidebar {
+      width: 80%;
+      left: -80%;
+    }
+  }
   
-}
+  @media screen and (max-width: 576px) {
+    .container {
+      padding: 0 10px;
+    }
+    header .shopping span {
+      left: 75%;
+    }
+    .card {
+      width: 100%;
+    }
+    .active .card {
+      left: 0;
+    }
+    .active .container {
+      transform: translateX(0);
+    }
+    .buka {
+      left: 70%;
+    }
+    .sidebar {
+      width: 70%;
+      left: -70%;
+    }
+  }
+  
 
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+  

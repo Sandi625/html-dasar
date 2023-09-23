@@ -31,6 +31,17 @@ function toggleSidebar() {
     }
 }
 
+
+
+// JavaScript
+const card = document.querySelector('.card');
+
+function closeCard() {
+    card.style.display = 'none';
+}
+
+// Kemudian, Anda bisa memanggil closeCard() saat tombol tutup ditekan.
+
   
   
   
